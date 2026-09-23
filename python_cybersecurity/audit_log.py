@@ -2,7 +2,7 @@
 def analizza_accessi(lista_log, stato_da_filtrare):
     lista_sospetti=[]
     for log in lista_log:
-        if log["stato"]==stato_da_filtrare:
+        if log["stato"]==FAILED:
             lista_sospetti.append(log["ip"])
     return(lista_sospetti)
 
